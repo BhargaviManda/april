@@ -1,0 +1,233 @@
+body {
+    min-height: 100vh;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+}
+
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Ensure full viewport height */
+    z-index:-1;
+    
+}
+
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.navbar.sticky-top {
+    top: -100px;
+    transition: .5s;
+    z-index: 999;
+}
+
+.navbar .navbar-brand img {
+    max-height: 35px;
+}
+
+.navbar .navbar-nav .nav-link {
+    margin-left: 25px;
+    padding: 5px 0;
+    color: #000000;
+    font-weight: 400;
+    outline: none;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+@media (max-width: 991.98px) {
+    .navbar .navbar-brand img {
+        max-height: 45px;
+    }
+
+    .navbar .navbar-nav {
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .navbar .nav-item .dropdown-menu {
+        padding-left: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        border: none;
+        margin-top: 0;
+        top: 150%;
+        right: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        top: 100%;
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+    }
+}
+
+.reg {
+    max-width: 50%; 
+    max-height: 80%;
+    width: 100%;
+    padding: 4px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    margin: auto; /* Center horizontally */
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    background-color: white;
+}
+
+
+.reg header {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.input-box {
+    width: 45%; /* Adjust this as needed */
+    margin: 6px;
+}
+
+.input-box label {
+    color: #333;
+}
+
+.input-box input,
+.select-box select {
+    width: 100%;
+    height: 50px;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+    margin-top: 8px;
+}
+.input-address {
+    width: 100%; /* Adjust this as needed */
+    margin: 6px;
+    justify-content: left;
+    padding: 0 15px;
+}
+
+.input-address label {
+    color: #333;
+}
+
+.input-address input {
+    
+    width: 100%;
+    height: 50px;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+    margin-top: 8px;
+}
+
+
+.select{
+  border:none;
+  width: 100%;
+    height: 50px;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+    margin-top: 8px;
+}
+
+.select:focus{
+  outline:none;
+}
+.button-box {
+    width: 100%;
+    margin-top:-15px;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 10px;
+    padding: 0 15px;
+}
+.button-box a, .button-box span{
+    margin-top: 35px;
+}
+
+.button-box button,
+.button-box a {
+    margin-right: 20px; /* Adjust margin as needed to create space between the button and anchor tag */
+}
+
+.button-box button {
+    height: 40px;
+    width: 200px;
+    background-color: rgb(130, 106, 251);
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    font-weight: 400;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all 0.2 ease;
+    border-radius: 6px;
+}
+
+.button-box button:hover {
+    background-color: #4cee90;
+}
+
+.input-box input:focus {
+    box-shadow: 0 1px rgba(0,0,0,0.1);
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    .input-box {
+        width: 90%;
+    }
+}
