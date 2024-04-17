@@ -1,0 +1,6 @@
+com\thbs\BatchManagement\entitytest\BatchTest.class
+com\thbs\BatchManagement\BatchManagementApplicationTests.class
+com\thbs\BatchManagement\exceptionhandlertest\GlobalExceptionHandlerTest.class
+com\thbs\BatchManagement\servicetest\BatchServiceTest.class
+com\thbs\BatchManagement\entitytest\EmployeeDTOTest.class
+com\thbs\BatchManagement\controllertest\BatchControllerTest.class
